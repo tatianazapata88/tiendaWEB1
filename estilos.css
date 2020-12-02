@@ -1,6 +1,9 @@
 
 .parrafo1{
     font-size: 20px;
+    color: grey;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .footer{
@@ -13,7 +16,7 @@
 
 .negritaycolor{
     font-weight: bold;
-    color: rgb(131, 65, 11);
+    color: gray;
     font-size: 25px;
 }
 
@@ -28,6 +31,7 @@
     font-style: italic;
     color: burlywood;
     font-family: 'Courier New', Courier, monospace;
+
     
 }
 

@@ -28,32 +28,45 @@
         </header>
         <main class="dark">
         <BR>
-        <h6 class="negritaycolor text-center">GPS TECH</h6>
-        <h2 class="negritaycolor text-center">PARA QUE SIEMPRE SEPAS DONDE ESTÁ</h2>
+        <h2 class="negritaycolor text-center">ADMINISTRACION DE PRODUCTOS</h2>
         
-        <p class="parrafo1 text-justify">GPS TECH te trae un catálogo de productos que te serán de gran utilidad para determinar su ubicación en tiempo real y puedas encontrarlos. Traemos la mejor tecnología para que encuentres lo que tanto buscas, mediante un aliado que ante una pérdida por robo o un descuido estés a un click de hallarlo.  </p>
-</div>    
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/localiza.jpg" class="img-fluid mx-auto d-block w-100 imagen" alt="imagen1">
-          </div>
-          <div class="carousel-item">
-            <img src="img/mundo.JPG" class="img-fluid mx-auto d-block w-100 imagen" alt="imagen2">
-          </div>
-          <div class="carousel-item">
-            <img src="img/ubicacion.JPG" class="img-fluid mx-auto d-block w-100 imagen " alt="imagen3">
-          </div>
+        <br>
+        <div class="container col-6 ">
+            <form action="confirmacion.php" method="POST">
+                
+                
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre Producto" name="nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Marca Producto" name="marca">
+                    </div>
+                </div>
+                <div class="row mt-3"> 
+                    <div class="col">
+                           <input type="text" class="form-control" placeholder="Precio Producto" name="precio">
+                    </div>
+                </div>
+                <div class="row mt-3"> 
+                    <div class="col">
+                      <textarea class="form-control" rows="4" name="descripcion" placeholder="Descripción"></textarea>
+                    </div>
+                </div>
+                <div class="row mt-3"> 
+                    <div class="col"> 
+                        <label class="font-weight-bold">Foto:</label> 
+                            <input type="text" class="form-control" placeholder="Foto URL" name="foto">
+                    </div>
+                </div>
+                <br>
+                
+                
+                <div class="col text-center">
+                    <button type="submit" class="btn btn-info" name="botonEnvio">Registrar</button>
+                </div>
+            </form>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
     </main>
     <footer class="bg-dark text-white mt-5">
         <div class="contaner">

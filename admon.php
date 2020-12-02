@@ -28,32 +28,19 @@
         </header>
         <main class="dark">
         <BR>
-        <h6 class="negritaycolor text-center">GPS TECH</h6>
-        <h2 class="negritaycolor text-center">PARA QUE SIEMPRE SEPAS DONDE ESTÁ</h2>
-        
-        <p class="parrafo1 text-justify">GPS TECH te trae un catálogo de productos que te serán de gran utilidad para determinar su ubicación en tiempo real y puedas encontrarlos. Traemos la mejor tecnología para que encuentres lo que tanto buscas, mediante un aliado que ante una pérdida por robo o un descuido estés a un click de hallarlo.  </p>
-</div>    
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/localiza.jpg" class="img-fluid mx-auto d-block w-100 imagen" alt="imagen1">
-          </div>
-          <div class="carousel-item">
-            <img src="img/mundo.JPG" class="img-fluid mx-auto d-block w-100 imagen" alt="imagen2">
-          </div>
-          <div class="carousel-item">
-            <img src="img/ubicacion.JPG" class="img-fluid mx-auto d-block w-100 imagen " alt="imagen3">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+        <h6 class="negritaycolor text-center">BIENVENIDO ADMINISTRADOR</h6>
+        <h2 class="negritaycolor text-center">GESTION DE PRODUCTOS</h2>
+        <br>
+        <br>
+        <div class="col text-center">
+        <div class="btn-group-vertical" >
+            <a class="btn btn-secondary" href="formularioProducto.php" role="button">Agregar Producto Nuevo</a>
+            <br>
+            <button type="button" class="btn btn-secondary">Editar Producto</button>
+            <br>
+            <button type="button" class="btn btn-secondary">Listar Productos</button>
+         </div>
+         </div> 
     </main>
     <footer class="bg-dark text-white mt-5">
         <div class="contaner">
