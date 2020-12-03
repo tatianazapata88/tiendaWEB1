@@ -20,7 +20,7 @@
                             <a class="nav-link" href="admon.php">Administración</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="calculadora.php">Catálogo de Productos</a>
+                            <a class="nav-link" href="listadoProductos.php">Catálogo de Productos</a>
                         </li>
                     </ul>
                 </div>
@@ -38,7 +38,8 @@
             <br>
             <button type="button" class="btn btn-secondary">Editar Producto</button>
             <br>
-            <button type="button" class="btn btn-secondary">Listar Productos</button>
+            <a class="btn btn-secondary" href="listadoProductos.php" role="button">Listar productos</a>
+            
          </div>
          </div> 
     </main>

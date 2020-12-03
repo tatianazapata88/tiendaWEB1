@@ -20,7 +20,7 @@
                             <a class="nav-link" href="admon.php">Administración</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="calculadora.php">Catálogo de Productos</a>
+                            <a class="nav-link" href="listadoProductos.php">Catálogo de Productos</a>
                         </li>
                     </ul>
                 </div>
@@ -32,7 +32,7 @@
         
         <br>
         <div class="container col-6 ">
-            <form action="confirmacion.php" method="POST">
+            <form action="registrarProductos.php" method="POST">
                 
                 
                 <div class="row">

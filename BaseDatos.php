@@ -16,7 +16,7 @@ public function conectarBD(){
 
     //1. DEFINIR EL DSN(info generica de mi BD)
     //gestorBD:host=nombreServidor;dbname=nombreBD
-    $infoBD="mysql:host=localhost;dbname=tiendais";
+    $infoBD="mysql:host=localhost;dbname=tiendaweb";
 
     //2. Revisar(intentar) si hay conexión con la BD
     try{
@@ -32,42 +32,42 @@ public function conectarBD(){
 
 }
 
-public function agregarDatos($consultaSQL){
+public function agregarProductos($consultaSQL){
 
     //1. Establecer una conexión con la BD
     $conexionBD=$this->conectarBD();
     
     //2. Peparar la consulta
-    $consultaInsertarDatos=$conexionBD->prepare($consultaSQL);
+    $consultarAgregarProducto=$conexionBD->prepare($consultaSQL);
 
     //3. Ejecutar la consulta
-    $resultado=$consultaInsertarDatos->execute();
+    $resultado=$consultarAgregarProducto->execute();
 
     //4. Verificar el resultado
     if($resultado){
-        echo("se agrego el registro con éxito");
+        echo("Se agrego el producto con éxito");
     }else{
-        echo("Error agregando el registro");
+        echo("Error agregando el producto");
     }
-    
+    Header("location:formularioProducto.php");
 }
 
-public function consultarDatos($consultaSQL){
+public function consultarProductos($consultaSQL){
 
     //1.Establecer la conexión
     $conexionBD=$this->conectarBD();
 
     //2. Preparar la consulta para agregar datos
-    $consultaBuscarDatos=$conexionBD->prepare($consultaSQL);
+    $consultaBuscarProductos=$conexionBD->prepare($consultaSQL);
 
     //3. Establecer como(En que formato) devolver los datos consultados
-    $consultaBuscarDatos->setFetchMode(PDO::FETCH_ASSOC);
+    $consultaBuscarProductos->setFetchMode(PDO::FETCH_ASSOC);
 
     //4. Ejecutar la consulta preparada
-    $resultado=$consultaBuscarDatos->execute();
+    $resultado=$consultaBuscarProductos->execute();
 
     //5. Retornar los datos consultados
-    return($consultaBuscarDatos->fetchAll());
+    return($consultaBuscarProductos->fetchAll());
 }
 
 public function eliminarDatos($consultaSQL){
