@@ -36,7 +36,7 @@
         <div class="btn-group-vertical" >
             <a class="btn btn-secondary" href="formularioProducto.php" role="button">Agregar Producto Nuevo</a>
             <br>
-            <button type="button" class="btn btn-secondary">Editar Producto</button>
+            <a class="btn btn-secondary" href="editarProductos.php" role="button">Editar Productos</a>
             <br>
             <a class="btn btn-secondary" href="listadoProductos.php" role="button">Listar productos</a>
             

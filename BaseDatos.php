@@ -70,41 +70,43 @@ public function consultarProductos($consultaSQL){
     return($consultaBuscarProductos->fetchAll());
 }
 
-public function eliminarDatos($consultaSQL){
+public function eliminarProductos($consultaSQL){
   //1. Establecer una conexión con la BD
   $conexionBD=$this->conectarBD();
     
   //2. Peparar la consulta
-  $consultaEliminarDatos=$conexionBD->prepare($consultaSQL);
+  $consultaEliminarProductos=$conexionBD->prepare($consultaSQL);
 
   //3. Ejecutar la consulta
-  $resultado=$consultaEliminarDatos->execute();
+  $resultado=$consultaEliminarProductos->execute();
 
   //4. Verificar el resultado
   if($resultado){
-      echo("se eliminó el registro con éxito");
+      echo("se eliminó el producto con éxito");
   }else{
-      echo("Error eliminando el registro");
+      echo("Error eliminando el producto");
   }
+  Header("location:editarProductos.php");
 
 }
 
-public function editarDatos($consultaSQL){
+public function editarProductos($consultaSQL){
     //1. Establecer una conexión con la BD
     $conexionBD=$this->conectarBD();
       
     //2. Peparar la consulta
-    $consultaEditarDatos=$conexionBD->prepare($consultaSQL);
+    $consultaEditarProductos=$conexionBD->prepare($consultaSQL);
   
     //3. Ejecutar la consulta
-    $resultado=$consultaEditarDatos->execute();
+    $resultado=$consultaEditarProductos->execute();
   
     //4. Verificar el resultado
     if($resultado){
-        echo("se editó el registro con éxito");
+        echo("se editó el producto con éxito");
     }else{
-        echo("Error editando el registro");
+        echo("Error editando el producto");
     }
+    Header("location:editarProductos.php");
   
   }
 
